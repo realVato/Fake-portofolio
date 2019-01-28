@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Serif");
 html, body {
   font-family: 'PT Serif', serif;
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 #navbar {
   top: 0;
@@ -20,5 +21,53 @@ html, body {
 
 #welcome-section {
   background-color: #e0ebe8;
+  width: 100%;
+  min-height: 970px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  #welcome-section .iAm {
+    height: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #welcome-section .iAm h1 {
+      margin: 0;
+      font-size: 2rem; }
+    #welcome-section .iAm p {
+      color: #345a36;
+      margin: 0;
+      letter-spacing: 0.1rem; }
+
+#projects {
+  background-color: #ccc;
+  margin-top: -3px;
   text-align: center;
-  min-height: 950px; }
+  padding-bottom: 20px; }
+  #projects .intro {
+    text-align: center;
+    color: #345a36;
+    letter-spacing: 0.1rem;
+    padding: 20px; }
+  #projects button {
+    padding: 20px 30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #345a36; }
+    #projects button a {
+      text-decoration: none;
+      color: #fff; }

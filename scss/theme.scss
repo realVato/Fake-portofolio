@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Serif');
 
 $nav_header_bg: #e0ebe8;
+$small_text_green: rgb(52, 90, 54);
 
 html, body {
     font-family: 'PT Serif', serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 #navbar {
-
     top: 0;
     position: fixed;
     width: 100%;
@@ -21,7 +22,7 @@ html, body {
 
         a {
             text-transform: none;
-            color: rgb(52, 90, 54);
+            color: $small_text_green;
             
             li {
                 display: inline-block;
@@ -33,7 +34,55 @@ html, body {
 
 #welcome-section {
     background-color: $nav_header_bg;
-    text-align: center;
-    min-height: 950px;
+    width: 100%;
+    min-height: 970px;
+    display: flex;
+    flex-direction: column;
 
+    .iAm {
+       height: 50vw;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+
+       h1 {
+           margin: 0;
+           font-size: 2rem;
+       }
+
+       p {
+           color: $small_text_green;
+           margin: 0;
+           letter-spacing: 0.1rem;
+       }
+    }
+}
+
+#projects {
+    background-color: #ccc;
+    margin-top: -3px;
+    text-align: center;
+    padding-bottom: 20px;
+
+        .intro {
+            text-align: center;
+            color: $small_text_green;
+            letter-spacing: 0.1rem;
+            padding: 20px;
+        }
+
+        
+
+        button {
+            padding: 20px 30px;
+            border: 0;
+            border-radius: 5px;
+            background-color: rgb(52, 90, 54);
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
 }

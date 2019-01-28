@@ -34,17 +34,12 @@ html, body {
 
 #welcome-section {
     background-color: $nav_header_bg;
-    width: 100%;
-    min-height: 970px;
-    display: flex;
-    flex-direction: column;
+    min-height: 700px;
+    padding-top: 40vh;
+    text-align: center;
 
     .iAm {
-       height: 50vw;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       flex-direction: column;
+      
 
        h1 {
            margin: 0;
@@ -63,7 +58,8 @@ html, body {
     background-color: #ccc;
     margin-top: -3px;
     text-align: center;
-    padding-bottom: 20px;
+    width: 100%;
+    
 
         .intro {
             text-align: center;
@@ -72,11 +68,32 @@ html, body {
             padding: 20px;
         }
 
-        
+        .box {
+            width: 80%;
+            margin: auto;
+
+            a {
+                display: inline-block;
+                width: 220px;
+                height: 200px;
+                margin: 40px 100px;
+                border: 2px solid #000;
+                text-decoration: none;
+                color: #000;
+
+                .projects-pic {
+                    height: 170px;
+                    width: 100%;
+                }
+
+                
+            }
+          
+        }
 
         button {
             padding: 20px 30px;
-            border: 0;
+            border: 3px solid #000;
             border-radius: 5px;
             background-color: rgb(52, 90, 54);
 

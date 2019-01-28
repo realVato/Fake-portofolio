@@ -10,7 +10,6 @@ html, body {
 }
 
 #navbar {
-    top: 0;
     position: fixed;
     width: 100%;
     background-color: $nav_header_bg;
@@ -34,12 +33,11 @@ html, body {
 
 #welcome-section {
     background-color: $nav_header_bg;
-    min-height: 700px;
-    padding-top: 40vh;
+    height: 100vh;
     text-align: center;
 
     .iAm {
-      
+        padding-top: 45vh;
 
        h1 {
            margin: 0;
@@ -56,10 +54,9 @@ html, body {
 
 #projects {
     background-color: #ccc;
-    margin-top: -3px;
     text-align: center;
     width: 100%;
-    
+    padding-bottom: 40px;
 
         .intro {
             text-align: center;
@@ -85,10 +82,7 @@ html, body {
                     height: 170px;
                     width: 100%;
                 }
-
-                
             }
-          
         }
 
         button {
@@ -103,3 +97,99 @@ html, body {
             }
         }
 }
+
+#contacts {
+    width: 100%;
+    background-color: rgb(104, 206, 172);
+    overflow: hidden;
+    padding-top: 50px;
+
+    header {
+        text-align: center;
+        
+        h1, p {
+            margin: 0;
+        }
+
+        h1 {
+            padding: 10px 0px;
+        }
+
+    }
+
+    .circles {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 100px;
+
+        .circle {
+            height: 120px;
+            min-width: 120px;
+            background-color: rgb(255, 0, 98);
+            border: 1px solid #fff;
+            border-radius: 50%;
+            text-decoration: none;
+            color: #000;
+            text-align: center;
+            line-height: 7rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .circle:hover {
+            background-color: #fff;
+        }
+    }
+}
+
+footer {
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    text-align: end;
+    overflow: hidden;
+    
+    a {
+        text-decoration: none;
+        color: green;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #navbar {
+        ul {
+            text-align: center;
+            padding: 0;
+
+            a {
+                text-decoration: none;
+                li {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    #projects {
+        .box {
+            a {
+                margin: 40px 40px;
+            }
+        }
+    }
+
+    #contacts {
+        .circles {
+            width: 100%;
+        }   
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+

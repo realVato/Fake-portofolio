@@ -5,7 +5,6 @@ html, body {
   overflow-x: hidden; }
 
 #navbar {
-  top: 0;
   position: fixed;
   width: 100%;
   background-color: #e0ebe8; }
@@ -21,22 +20,23 @@ html, body {
 
 #welcome-section {
   background-color: #e0ebe8;
-  min-height: 700px;
-  padding-top: 40vh;
+  height: 100vh;
   text-align: center; }
-  #welcome-section .iAm h1 {
-    margin: 0;
-    font-size: 2rem; }
-  #welcome-section .iAm p {
-    color: #345a36;
-    margin: 0;
-    letter-spacing: 0.1rem; }
+  #welcome-section .iAm {
+    padding-top: 45vh; }
+    #welcome-section .iAm h1 {
+      margin: 0;
+      font-size: 2rem; }
+    #welcome-section .iAm p {
+      color: #345a36;
+      margin: 0;
+      letter-spacing: 0.1rem; }
 
 #projects {
   background-color: #ccc;
-  margin-top: -3px;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 40px; }
   #projects .intro {
     text-align: center;
     color: #345a36;
@@ -64,3 +64,64 @@ html, body {
     #projects button a {
       text-decoration: none;
       color: #fff; }
+
+#contacts {
+  width: 100%;
+  background-color: #68ceac;
+  overflow: hidden;
+  padding-top: 50px; }
+  #contacts header {
+    text-align: center; }
+    #contacts header h1, #contacts header p {
+      margin: 0; }
+    #contacts header h1 {
+      padding: 10px 0px; }
+  #contacts .circles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 30%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 100px; }
+    #contacts .circles .circle {
+      height: 120px;
+      min-width: 120px;
+      background-color: #ff0062;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      text-decoration: none;
+      color: #000;
+      text-align: center;
+      line-height: 7rem;
+      font-size: 1.5rem;
+      font-weight: bold; }
+    #contacts .circles .circle:hover {
+      background-color: #fff; }
+
+footer {
+  background-color: #222222;
+  color: #fff;
+  text-align: end;
+  overflow: hidden; }
+  footer a {
+    text-decoration: none;
+    color: green; }
+
+@media (max-width: 800px) {
+  #navbar ul {
+    text-align: center;
+    padding: 0; }
+    #navbar ul a {
+      text-decoration: none; }
+      #navbar ul a li {
+        display: block; }
+  #projects .box a {
+    margin: 40px 40px; }
+  #contacts .circles {
+    width: 100%; }
+  footer {
+    text-align: center; } }
